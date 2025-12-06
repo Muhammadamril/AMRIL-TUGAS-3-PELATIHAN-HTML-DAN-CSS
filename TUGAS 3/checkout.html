@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout - Toko Modern</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-50">
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+      <div
+        class="container mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <a href="index.html" class="text-2xl font-bold text-indigo-600"
+          >Toko Modern</a
+        >
+        <div class="hidden md:flex space-x-6">
+          <a href="index.html" class="text-gray-600 hover:text-indigo-600"
+            >Home</a
+          >
+          <a href="products.html" class="text-gray-600 hover:text-indigo-600"
+            >Produk</a
+          >
+          <a href="cart.html" class="text-indigo-600 font-semibold"
+            >Keranjang</a
+          >
+        </div>
+        <a href="cart.html" class="text-indigo-600 md:hidden">
+          <svg
+            class="w-6 h-6"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M3 3h2l3.293 3.293A1 1 0 009.5 7h8a1 1 0 00.9-.5l2.4-5.278A1 1 0 0021 3H3zM10 21a1 1 0 11-2 0 1 1 0 012 0zm10 0a1 1 0 11-2 0 1 1 0 012 0z"
+            ></path>
+          </svg>
+        </a>
+      </div>
+    </nav>
+
+    <main class="container mx-auto px-4 py-10">
+      <h1 class="text-4xl font-bold mb-8 text-center">Checkout Pembayaran</h1>
+
+      <div class="md:grid md:grid-cols-3 md:gap-8">
+        <div class="md:col-span-2 bg-white p-6 rounded-xl shadow-lg">
+          <h2 class="text-2xl font-bold mb-4 border-b pb-2">
+            Informasi Pembeli & Pengiriman
+          </h2>
+
+          <form class="space-y-4">
+            <div>
+              <label for="nama" class="block font-medium mb-1"
+                >Nama Lengkap</label
+              >
+              <input
+                type="text"
+                id="nama"
+                class="w-full p-3 border border-gray-300 rounded-lg"
+                required
+              />
+            </div>
+            <div>
+              <label for="email" class="block font-medium mb-1">Email</label>
+              <input
+                type="email"
+                id="email"
+                class="w-full p-3 border border-gray-300 rounded-lg"
+                required
+              />
+            </div>
+            <div>
+              <label for="telepon" class="block font-medium mb-1"
+                >Nomor Telepon</label
+              >
+              <input
+                type="tel"
+                id="telepon"
+                class="w-full p-3 border border-gray-300 rounded-lg"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="alamat" class="block font-medium mb-1"
+                >Alamat Pengiriman</label
+              >
+              <textarea
+                id="alamat"
+                rows="3"
+                class="w-full p-3 border border-gray-300 rounded-lg"
+                required
+              ></textarea>
+            </div>
+
+            <h3 class="font-bold text-xl pt-4">Metode Pembayaran</h3>
+            <div class="space-y-2">
+              <label
+                class="flex items-center space-x-3 bg-gray-50 p-3 rounded-lg border"
+              >
+                <input type="radio" name="payment" value="bank" checked />
+                <span>Transfer Bank (BCA/Mandiri)</span>
+              </label>
+              <label
+                class="flex items-center space-x-3 bg-gray-50 p-3 rounded-lg border"
+              >
+                <input type="radio" name="payment" value="ewallet" />
+                <span>E-Wallet (Dana/Gopay)</span>
+              </label>
+            </div>
+          </form>
+        </div>
+
+        <div class="mt-8 md:mt-0">
+          <div class="bg-white p-6 rounded-xl shadow-lg mb-6">
+            <h2 class="text-2xl font-bold mb-4 border-b pb-2">
+              Ringkasan Belanja
+            </h2>
+
+            <div class="space-y-2 text-gray-700">
+              <div class="flex justify-between">
+                <span>Subtotal Produk</span>
+                <span>Rp 750.000</span>
+              </div>
+              <div class="flex justify-between">
+                <span>Biaya Pengiriman</span>
+                <span>Rp 25.000</span>
+              </div>
+              <div
+                class="flex justify-between font-bold text-xl border-t pt-2 mt-2"
+              >
+                <span>Total Bayar</span>
+                <span class="text-indigo-600">Rp 775.000</span>
+              </div>
+            </div>
+          </div>
+
+          <button
+            class="w-full bg-green-600 text-white font-bold py-4 rounded-lg hover:bg-green-700 transition"
+          >
+            Lakukan Pembayaran Rp 775.000
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8 mt-10">
+      <div class="container mx-auto px-4 text-center">
+        <p>&copy; 2025 Toko Modern. Semua Hak Dilindungi.</p>
+      </div>
+    </footer>
+  </body>
+</html>

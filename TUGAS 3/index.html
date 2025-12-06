@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - Toko Modern</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-50">
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+      <div
+        class="container mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <a href="index.html" class="text-2xl font-bold text-indigo-600"
+          >Toko Modern</a
+        >
+        <div class="hidden md:flex space-x-6">
+          <a href="index.html" class="text-indigo-600 font-semibold">Home</a>
+          <a href="products.html" class="text-gray-600 hover:text-indigo-600"
+            >Produk</a
+          >
+          <a href="cart.html" class="text-gray-600 hover:text-indigo-600"
+            >Keranjang</a
+          >
+        </div>
+        <a
+          href="cart.html"
+          class="text-gray-600 hover:text-indigo-600 md:hidden"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M3 3h2l3.293 3.293A1 1 0 009.5 7h8a1 1 0 00.9-.5l2.4-5.278A1 1 0 0021 3H3zM10 21a1 1 0 11-2 0 1 1 0 012 0zm10 0a1 1 0 11-2 0 1 1 0 012 0z"
+            ></path>
+          </svg>
+        </a>
+      </div>
+    </nav>
+
+    <section class="bg-indigo-600 text-white py-20 text-center">
+      <div class="container mx-auto px-4">
+        <h1 class="text-5xl font-bold mb-4">Selamat Datang di Toko Modern!</h1>
+        <p class="text-xl opacity-90">
+          Temukan koleksi terbaru dan produk berkualitas.
+        </p>
+        <a
+          href="products.html"
+          class="mt-8 inline-block bg-white text-indigo-600 font-bold py-3 px-8 rounded-lg hover:bg-gray-100 transition"
+          >Lihat Semua Produk</a
+        >
+      </div>
+    </section>
+
+    <section class="py-16">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-10">Produk Unggulan</h2>
+        <div class="grid md:grid-cols-3 lg:grid-cols-4 gap-8">
+          <div
+            class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition"
+          >
+            <div class="h-48 bg-gray-200"></div>
+            <div class="p-4">
+              <h3 class="font-bold text-lg">Nama Produk 1</h3>
+              <p class="text-indigo-600 font-semibold mt-1">Rp 150.000</p>
+              <a
+                href="detail.html"
+                class="mt-4 block text-center bg-indigo-500 text-white py-2 rounded-md hover:bg-indigo-600"
+                >Lihat Detail</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-yellow-400 py-12 my-10">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold text-gray-800">DISKON SPESIAL 50%!</h2>
+        <p class="text-lg mt-2 text-gray-700">
+          Gunakan kode PROMO50 saat checkout.
+        </p>
+      </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-8">
+      <div class="container mx-auto px-4 text-center">
+        <p>&copy; 2025 Toko Modern. Semua Hak Dilindungi.</p>
+      </div>
+    </footer>
+  </body>
+</html>
